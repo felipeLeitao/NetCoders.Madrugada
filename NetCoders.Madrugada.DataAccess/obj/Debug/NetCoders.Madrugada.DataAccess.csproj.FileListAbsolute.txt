@@ -1,0 +1,12 @@
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\obj\Debug\NetCoders.Madrugada.DataAccess.csprojResolveAssemblyReference.cache
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\NetCoders.Madrugada.DataAccess.dll.config
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\NetCoders.Madrugada.DataAccess.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\NetCoders.Madrugada.DataAccess.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\EntityFramework.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\NetCoders.Madrugada.Domain.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\NetCoders.Madrugada.Domain.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\EntityFramework.xml
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\obj\Debug\NetCoders.Madrugada.DataAccess.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\obj\Debug\NetCoders.Madrugada.DataAccess.pdb

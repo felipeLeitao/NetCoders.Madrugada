@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{539FA865-908F-4B88-988D-D78B5D255FFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0B3DAFFE-47D3-4B32-8DE1-953929832391}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{9D78767A-D319-4418-80F1-1ED338263AAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{F34C2722-E7D2-4814-9FCA-BC2F76AD0542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoders.Madrugada.UI.WEB", "NetCoders.Madrugada.UI.WEB\NetCoders.Madrugada.UI.WEB.csproj", "{24289A23-935E-47CD-AD19-0FD65C81884C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoders.Madrugada.DataAccess", "NetCoders.Madrugada.DataAccess\NetCoders.Madrugada.DataAccess.csproj", "{9843DB5A-BD52-4C00-A9A6-A7B0F2D06F4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoders.Madrugada.Domain", "NetCoders.Madrugada.Domain\NetCoders.Madrugada.Domain.csproj", "{B5139118-C3BC-4075-910D-473355ADF389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoders.Madrugada.Service", "NetCoders.Madrugada.Service\NetCoders.Madrugada.Service.csproj", "{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{48145282-2FBF-4474-B1D2-A9907B4DE3CD}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24289A23-935E-47CD-AD19-0FD65C81884C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24289A23-935E-47CD-AD19-0FD65C81884C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24289A23-935E-47CD-AD19-0FD65C81884C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24289A23-935E-47CD-AD19-0FD65C81884C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9843DB5A-BD52-4C00-A9A6-A7B0F2D06F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9843DB5A-BD52-4C00-A9A6-A7B0F2D06F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9843DB5A-BD52-4C00-A9A6-A7B0F2D06F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9843DB5A-BD52-4C00-A9A6-A7B0F2D06F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5139118-C3BC-4075-910D-473355ADF389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5139118-C3BC-4075-910D-473355ADF389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5139118-C3BC-4075-910D-473355ADF389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5139118-C3BC-4075-910D-473355ADF389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24289A23-935E-47CD-AD19-0FD65C81884C} = {539FA865-908F-4B88-988D-D78B5D255FFD}
+		{9843DB5A-BD52-4C00-A9A6-A7B0F2D06F4A} = {9D78767A-D319-4418-80F1-1ED338263AAD}
+		{B5139118-C3BC-4075-910D-473355ADF389} = {0B3DAFFE-47D3-4B32-8DE1-953929832391}
+		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D} = {F34C2722-E7D2-4814-9FCA-BC2F76AD0542}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Domain\bin\Debug\NetCoders.Madrugada.Domain.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Domain\bin\Debug\NetCoders.Madrugada.Domain.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Domain\obj\Debug\NetCoders.Madrugada.Domain.csprojResolveAssemblyReference.cache
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Domain\obj\Debug\NetCoders.Madrugada.Domain.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Domain\obj\Debug\NetCoders.Madrugada.Domain.pdb

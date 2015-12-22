@@ -1,0 +1,45 @@
+﻿@model IEnumerable<NetCoders.Madrugada.UI.WEB.ViewModel.FicanteViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Cadastrar")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idFicante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nmFicante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dsObs)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idFicante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nmFicante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dsObs)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id = item.idFicante }) |
+            @Html.ActionLink("Details", "Details", new { id = item.idFicante }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.idFicante })
+        </td>
+    </tr>
+}
+
+</table>

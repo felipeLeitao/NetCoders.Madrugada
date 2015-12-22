@@ -1,0 +1,11 @@
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.Service.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.Service.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\obj\Debug\NetCoders.Madrugada.Service.csprojResolveAssemblyReference.cache
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\obj\Debug\NetCoders.Madrugada.Service.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\obj\Debug\NetCoders.Madrugada.Service.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.DataAccess.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.Domain.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\EntityFramework.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.DataAccess.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.Domain.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\EntityFramework.xml
