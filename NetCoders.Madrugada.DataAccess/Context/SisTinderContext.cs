@@ -16,7 +16,10 @@ namespace NetCoders.Madrugada.DataAccess.Context
             : base("Name=SisTinderContext")
         {
            // this.Configuration.ProxyCreationEnabled = false;
-            
+            if (!Database.Exists())
+            {
+                Database.Create();
+            }
         }
 
         public DbSet<Ficante> Ficantes { get; set; }

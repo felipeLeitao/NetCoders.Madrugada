@@ -9,3 +9,6 @@ C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\EntityFram
 C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.DataAccess.pdb
 C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\NetCoders.Madrugada.Domain.pdb
 C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\EntityFramework.xml
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.Service\bin\Debug\Microsoft.Practices.ServiceLocation.xml

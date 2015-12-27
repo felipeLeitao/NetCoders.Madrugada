@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{481452
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoders.Madrugada.CrossCuting.Ioc", "NetCoders.Madrugada.CrossCuting.Ioc\NetCoders.Madrugada.CrossCuting.Ioc.csproj", "{92DFD8E5-61DC-4A7A-B519-D3A6E570FD2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DFD8E5-61DC-4A7A-B519-D3A6E570FD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DFD8E5-61DC-4A7A-B519-D3A6E570FD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DFD8E5-61DC-4A7A-B519-D3A6E570FD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DFD8E5-61DC-4A7A-B519-D3A6E570FD2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{9843DB5A-BD52-4C00-A9A6-A7B0F2D06F4A} = {9D78767A-D319-4418-80F1-1ED338263AAD}
 		{B5139118-C3BC-4075-910D-473355ADF389} = {0B3DAFFE-47D3-4B32-8DE1-953929832391}
 		{A6FD2DEF-4489-40F4-BF54-F7916F7E272D} = {F34C2722-E7D2-4814-9FCA-BC2F76AD0542}
+		{92DFD8E5-61DC-4A7A-B519-D3A6E570FD2C} = {9D78767A-D319-4418-80F1-1ED338263AAD}
 	EndGlobalSection
 EndGlobal

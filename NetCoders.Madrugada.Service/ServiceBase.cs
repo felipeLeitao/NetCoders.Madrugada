@@ -1,4 +1,6 @@
-﻿using NetCoders.Madrugada.Domain.Repositories;
+﻿using Microsoft.Practices.ServiceLocation;
+using NetCoders.Madrugada.Domain.Contracts.UnityOfWork;
+using NetCoders.Madrugada.Domain.Repositories;
 using NetCoders.Madrugada.Service.Interface;
 using System;
 using System.Collections.Generic;
@@ -10,12 +12,25 @@ namespace NetCoders.Madrugada.Service
     {
         public readonly IRepositoryBase<T> _repository;
 
+        private IUnityOfWork _unityOfWork;
+
         public ServiceBase(IRepositoryBase<T> repository_)
         {
             _repository = repository_;
         }
 
-        public void Create(T obj)
+        public void Begin()
+        {
+            _unityOfWork = ServiceLocator.Current.GetInstance<IUnityOfWork>();
+            _unityOfWork.Begin();
+        }
+
+        public void SaveChanges()
+        {
+            _unityOfWork.SaveChanges();
+        }
+
+        public virtual void Create(T obj)
         {
             _repository.Create(obj);
         }
@@ -30,7 +45,7 @@ namespace NetCoders.Madrugada.Service
             _repository.Update(obj);
         }
 
-        public void Remove(T obj)
+        public virtual void Remove(T obj)
         {
             _repository.Remove(obj);
         }

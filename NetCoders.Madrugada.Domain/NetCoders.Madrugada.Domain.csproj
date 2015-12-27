@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\UnityOfWork\IUnityOfWork.cs" />
     <Compile Include="Entities\Ficante.cs" />
     <Compile Include="Entities\Telefone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

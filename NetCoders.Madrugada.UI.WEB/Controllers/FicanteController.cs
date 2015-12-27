@@ -25,9 +25,7 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
         // GET: Ficante
         public ActionResult Index()
         {
-            var teste = _ficanteService.Read();
-
-            var model = TypeAdapter.Adapt<IList<Ficante>, IList<FicanteViewModel>>(_ficanteService.Read());
+            var model = TypeAdapter.Adapt<IList<Ficante>, IList<FicanteViewModel>>(_ficanteService.Read());   
             return View(model);
         }
 
@@ -103,21 +101,11 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
         {
             try
             {
-                var ficante = _ficanteService.Find(x => x.idFicante == id).FirstOrDefault();
-
-                foreach (var item in _telefoneService.Find(x => x.idFicante == id))
-                {
-                    _telefoneService.Remove(item);
-                }
-
-                _ficanteService.Remove(ficante);
-                
-                
+                _ficanteService.Remove(_ficanteService.Find(x => x.idFicante == id).FirstOrDefault()); 
             }
             catch (Exception)
             {
                 TempData["ERRO"] = "Falha ao excluir";
-
             }
 
             return RedirectToAction("Index");

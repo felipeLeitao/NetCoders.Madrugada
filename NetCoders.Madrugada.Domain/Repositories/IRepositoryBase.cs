@@ -17,6 +17,8 @@ namespace NetCoders.Madrugada.Domain.Repositories
 
         void Remove(T obj);
 
+        void RemoveRange(ICollection<T> collection_);
+
         IList<T> Find(Expression<Func<T, bool>> filter_);
 
         IList<T> Join(Expression<Func<T, Object>> join_, Expression<Func<T, bool>> filter_);

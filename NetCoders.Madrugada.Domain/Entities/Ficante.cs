@@ -10,6 +10,7 @@ namespace NetCoders.Madrugada.Domain.Entities
             this.Telefones = new List<Telefone>();
         }
 
+
         public int idFicante { get; set; }
         public string nmFicante { get; set; }
         public string dsObs { get; set; }
