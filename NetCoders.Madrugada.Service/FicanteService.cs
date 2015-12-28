@@ -32,9 +32,11 @@ namespace NetCoders.Madrugada.Service
         {
             base.Begin();
 
+            _ficanteRepository.Remove(obj);
+
             _telefoneRepository.RemoveRange(obj.Telefones);
 
-            _ficanteRepository.Remove(obj);
+            base.SaveChanges();
 
         }
     }

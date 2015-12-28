@@ -32,7 +32,11 @@ namespace NetCoders.Madrugada.Service
 
         public virtual void Create(T obj)
         {
+            Begin();
+
             _repository.Create(obj);
+
+            SaveChanges();
         }
 
         public IList<T> Read()
@@ -42,12 +46,20 @@ namespace NetCoders.Madrugada.Service
 
         public void Update(T obj)
         {
+            Begin();
+
             _repository.Update(obj);
+
+            SaveChanges();
         }
 
         public virtual void Remove(T obj)
         {
+            Begin();
+
             _repository.Remove(obj);
+
+            SaveChanges();
         }
 
         public IList<T> Find(Expression<Func<T, bool>> filter_)

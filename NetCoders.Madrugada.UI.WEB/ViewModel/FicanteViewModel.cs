@@ -12,7 +12,7 @@ namespace NetCoders.Madrugada.UI.WEB.ViewModel
 
         public FicanteViewModel()
         {
-            this.Telefones = new List<TelefoneViewModel>();
+            this.TelefonesViewModel = new List<TelefoneViewModel>();
         }
 
         public int idFicante { get; set; }
@@ -22,6 +22,6 @@ namespace NetCoders.Madrugada.UI.WEB.ViewModel
 
         public string dsObs { get; set; }
 
-        public virtual ICollection<TelefoneViewModel> Telefones { get; set; }
+        public virtual ICollection<TelefoneViewModel> TelefonesViewModel { get; set; }
     }
 }

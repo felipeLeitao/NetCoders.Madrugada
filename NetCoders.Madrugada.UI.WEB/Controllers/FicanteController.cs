@@ -25,7 +25,7 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
         // GET: Ficante
         public ActionResult Index()
         {
-            var model = TypeAdapter.Adapt<IList<Ficante>, IList<FicanteViewModel>>(_ficanteService.Read());   
+            var model = TypeAdapter.Adapt<IList<Ficante>, IList<FicanteViewModel>>(_ficanteService.Read());
             return View(model);
         }
 
@@ -57,10 +57,13 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
         // GET: Ficante/Edit/5
         public ActionResult Edit(int id)
         {
-            var model = TypeAdapter.Adapt<Ficante, FicanteViewModel>(_ficanteService.Find(x => x.idFicante == id).First());
-            model.Telefones = TypeAdapter.Adapt<IList<Telefone>, IList<TelefoneViewModel>>(_telefoneService.Find(x => x.idFicante == id));
+            var ficante = _ficanteService.Find(x => x.idFicante == id).First();
 
-            TempData["Telefones"] = model.Telefones;
+            var model = TypeAdapter.Adapt<Ficante, FicanteViewModel>(ficante);
+
+            model.TelefonesViewModel = TypeAdapter.Adapt<ICollection<Telefone>, IList<TelefoneViewModel>>(ficante.Telefones);
+
+            TempData["Telefones"] = model.TelefonesViewModel;
 
             return View(model);
         }
@@ -75,16 +78,16 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
             {
                 var ficante = TypeAdapter.Adapt<FicanteViewModel, Ficante>(model_);
 
-                foreach (var item in ficante.Telefones.Where(x => x.idFicante != 0))
-                {
-                    _telefoneService.Update(item);
-                }
+                //foreach (var item in ficante.Telefones.Where(x => x.idFicante != 0))
+                //{
+                //    _telefoneService.Update(item);
+                //}
 
-                foreach (var item in ficante.Telefones.Where(x => x.idFicante == 0))
-                {
-                    item.idFicante = model_.idFicante;
-                    _telefoneService.Create(item);
-                }
+                //foreach (var item in ficante.Telefones.Where(x => x.idFicante == 0))
+                //{
+                //    item.idFicante = model_.idFicante;
+                //    _telefoneService.Create(item);
+                //}
 
                 _ficanteService.Update(ficante);
 
