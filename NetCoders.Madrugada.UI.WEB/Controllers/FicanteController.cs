@@ -44,6 +44,8 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
             {
                 var ficante = TypeAdapter.Adapt<FicanteViewModel, Ficante>(model_);
 
+                ficante.Telefones = TypeAdapter.Adapt<ICollection<TelefoneViewModel>, ICollection<Telefone>>(model_.TelefonesViewModel);
+
                 _ficanteService.Create(ficante);
 
                 return RedirectToAction("Index");
@@ -68,31 +70,25 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
             return View(model);
         }
 
-        // POST: Ficante/Edit/5
         [HttpPost]
         public ActionResult Edit(FicanteViewModel model_)
         {
+            //Isso daqui vai me ajudar a ver quais telefones foram excluidos. Eu poderia pensar em por uma flag em TelefoneViewModel e virar ela
+            //quando for pra excluir, mas to com preguiça...
+
             var telefonesMemoria = TempData["Telefones"] as List<TelefoneViewModel>;
 
             try
             {
                 var ficante = TypeAdapter.Adapt<FicanteViewModel, Ficante>(model_);
 
-                //foreach (var item in ficante.Telefones.Where(x => x.idFicante != 0))
-                //{
-                //    _telefoneService.Update(item);
-                //}
-
-                //foreach (var item in ficante.Telefones.Where(x => x.idFicante == 0))
-                //{
-                //    item.idFicante = model_.idFicante;
-                //    _telefoneService.Create(item);
-                //}
+                ficante.Telefones = TypeAdapter.Adapt<ICollection<TelefoneViewModel>, ICollection<Telefone>>(model_.TelefonesViewModel);
 
                 _ficanteService.Update(ficante);
 
                 return RedirectToAction("Index");
             }
+
             catch
             {
                 TempData["Telefones"] = telefonesMemoria;

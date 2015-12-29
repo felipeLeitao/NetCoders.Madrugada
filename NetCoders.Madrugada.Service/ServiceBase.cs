@@ -44,7 +44,7 @@ namespace NetCoders.Madrugada.Service
             return _repository.Read();
         }
 
-        public void Update(T obj)
+        public virtual void Update(T obj)
         {
             Begin();
 

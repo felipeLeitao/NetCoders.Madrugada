@@ -16,10 +16,6 @@ namespace NetCoders.Madrugada.DataAccess.Context
             : base("Name=SisTinderContext")
         {
            // this.Configuration.ProxyCreationEnabled = false;
-            if (!Database.Exists())
-            {
-                Database.Create();
-            }
         }
 
         public DbSet<Ficante> Ficantes { get; set; }
@@ -27,12 +23,8 @@ namespace NetCoders.Madrugada.DataAccess.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
-
             modelBuilder.Configurations.Add(new FicanteMap());
             modelBuilder.Configurations.Add(new TelefoneMap());
-
-            
         }
 
         public class SisTinderContextCustomInitializer : IDatabaseInitializer<SisTinderContext>

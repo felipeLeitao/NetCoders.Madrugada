@@ -2,6 +2,7 @@
 using NetCoders.Madrugada.Domain.Entities;
 using NetCoders.Madrugada.Domain.Repositories;
 using NetCoders.Madrugada.Service.Interface;
+using System.Linq;
 
 namespace NetCoders.Madrugada.Service
 {
@@ -38,6 +39,26 @@ namespace NetCoders.Madrugada.Service
 
             base.SaveChanges();
 
+        }
+
+        public override void Update(Ficante obj)
+        {
+            base.Begin();
+
+            foreach (var item in obj.Telefones.Where(x => x.idFicante != 0))
+            {
+                _telefoneRepository.Update(item);
+            }
+
+            foreach (var item in obj.Telefones.Where(x => x.idFicante == 0))
+            {
+                item.idFicante = obj.idFicante;
+                _telefoneRepository.Create(item);
+            }
+
+            _ficanteRepository.Update(obj);
+
+            base.SaveChanges();
         }
     }
 }
