@@ -12,9 +12,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.idFicante)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.nmFicante)
         </th>
         <th>
@@ -26,18 +23,15 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.idFicante)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.nmFicante)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.dsObs)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new {  id = item.idFicante }) |
-            @Html.ActionLink("Details", "Details", new { id = item.idFicante }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.idFicante })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Codigo }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Codigo }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Codigo })
         </td>
     </tr>
 }

@@ -59,7 +59,7 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
         // GET: Ficante/Edit/5
         public ActionResult Edit(int id)
         {
-            var ficante = _ficanteService.Find(x => x.idFicante == id).First();
+            var ficante = _ficanteService.Find(x => x.Codigo == id).First();
 
             var model = TypeAdapter.Adapt<Ficante, FicanteViewModel>(ficante);
 
@@ -100,7 +100,7 @@ namespace NetCoders.Madrugada.UI.WEB.Controllers
         {
             try
             {
-                _ficanteService.Remove(_ficanteService.Find(x => x.idFicante == id).FirstOrDefault()); 
+                _ficanteService.Remove(_ficanteService.Find(x => x.Codigo == id).FirstOrDefault()); 
             }
             catch (Exception)
             {

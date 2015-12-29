@@ -8,7 +8,7 @@ namespace NetCoders.Madrugada.DataAccess.Mapping
         public FicanteMap()
         {
             // Primary Key
-            this.HasKey(t => t.idFicante);
+            this.HasKey(t => t.Codigo);
 
             // Properties
             this.Property(t => t.nmFicante)
@@ -20,7 +20,7 @@ namespace NetCoders.Madrugada.DataAccess.Mapping
 
             // Table & Column Mappings
             this.ToTable("Ficante");
-            this.Property(t => t.idFicante).HasColumnName("idFicante");
+            this.Property(t => t.Codigo).HasColumnName("idFicante");
             this.Property(t => t.nmFicante).HasColumnName("nmFicante");
             this.Property(t => t.dsObs).HasColumnName("dsObs");
         }

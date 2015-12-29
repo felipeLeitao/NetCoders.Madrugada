@@ -8,12 +8,12 @@ namespace NetCoders.Madrugada.DataAccess.Mapping
         public TelefoneMap()
         {
             // Primary Key
-            this.HasKey(t => t.idTelefone);
+            this.HasKey(t => t.Codigo);
 
             // Properties
             // Table & Column Mappings
             this.ToTable("Telefone");
-            this.Property(t => t.idTelefone).HasColumnName("idTelefone");
+            this.Property(t => t.Codigo).HasColumnName("idTelefone");
             this.Property(t => t.idFicante).HasColumnName("idFicante");
             this.Property(t => t.nrTelefone).HasColumnName("nrTelefone");
 

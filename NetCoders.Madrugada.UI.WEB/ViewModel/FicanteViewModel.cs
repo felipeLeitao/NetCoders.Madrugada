@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NetCoders.Madrugada.UI.WEB.ViewModel
 {
-    public class FicanteViewModel
+    public class FicanteViewModel : Core.ViewModel
     {
 
         public FicanteViewModel()
@@ -15,11 +15,11 @@ namespace NetCoders.Madrugada.UI.WEB.ViewModel
             this.TelefonesViewModel = new List<TelefoneViewModel>();
         }
 
-        public int idFicante { get; set; }
-
         [Required]
+        [Display(Name = "Ficante")]
         public string nmFicante { get; set; }
 
+        [Display(Name = "Obs")]
         public string dsObs { get; set; }
 
         public virtual ICollection<TelefoneViewModel> TelefonesViewModel { get; set; }

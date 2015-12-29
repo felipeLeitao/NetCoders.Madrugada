@@ -52,7 +52,7 @@ namespace NetCoders.Madrugada.Service
 
             foreach (var item in obj.Telefones.Where(x => x.idFicante == 0))
             {
-                item.idFicante = obj.idFicante;
+                item.idFicante = obj.Codigo;
                 _telefoneRepository.Create(item);
             }
 
