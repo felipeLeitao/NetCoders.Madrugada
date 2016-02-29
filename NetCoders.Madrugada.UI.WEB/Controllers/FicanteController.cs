@@ -11,7 +11,6 @@ using NetCoders.Madrugada.Service.Interface;
 
 namespace NetCoders.Madrugada.UI.WEB.Controllers
 {
-    [Authorize]
     public class FicanteController : Controller
     {
         private readonly IFicanteService _ficanteService;
