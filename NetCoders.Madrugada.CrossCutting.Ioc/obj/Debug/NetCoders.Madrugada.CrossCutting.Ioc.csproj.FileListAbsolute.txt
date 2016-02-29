@@ -1,9 +1,0 @@
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\bin\Debug\NetCoders.Madrugada.CrossCutting.Ioc.dll
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\bin\Debug\NetCoders.Madrugada.CrossCutting.Ioc.pdb
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\bin\Debug\SimpleInjector.dll
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\bin\Debug\SimpleInjector.Integration.Web.dll
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\bin\Debug\SimpleInjector.xml
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\bin\Debug\SimpleInjector.Integration.Web.xml
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\obj\Debug\NetCoders.Madrugada.CrossCutting.Ioc.csprojResolveAssemblyReference.cache
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\obj\Debug\NetCoders.Madrugada.CrossCutting.Ioc.dll
-C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.CrossCutting.Ioc\obj\Debug\NetCoders.Madrugada.CrossCutting.Ioc.pdb
