@@ -13,3 +13,5 @@ C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\obj\Debug\NetCode
 C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\obj\Debug\NetCoders.Madrugada.DataAccess.Migrations.Initial.resources
+C:\Projects\NetCoders.Madrugada\NetCoders.Madrugada.DataAccess\obj\Debug\NetCoders.Madrugada.DataAccess.csproj.GenerateResource.Cache

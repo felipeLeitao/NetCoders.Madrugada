@@ -49,9 +49,11 @@
     <Compile Include="Interface\IFicanteService.cs" />
     <Compile Include="Interface\IServiceBase.cs" />
     <Compile Include="Interface\ITelefoneService.cs" />
+    <Compile Include="Interface\IUsuarioService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceBase.cs" />
     <Compile Include="TelefoneService.cs" />
+    <Compile Include="UsuarioService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetCoders.Madrugada.DataAccess\NetCoders.Madrugada.DataAccess.csproj">

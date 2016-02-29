@@ -43,10 +43,12 @@
     <Compile Include="Entities\Core\Entity.cs" />
     <Compile Include="Entities\Ficante.cs" />
     <Compile Include="Entities\Telefone.cs" />
+    <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IFicanteRepository.cs" />
     <Compile Include="Repositories\IRepositoryBase.cs" />
     <Compile Include="Repositories\ITelefoneRepository.cs" />
+    <Compile Include="Repositories\IUsuarioRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

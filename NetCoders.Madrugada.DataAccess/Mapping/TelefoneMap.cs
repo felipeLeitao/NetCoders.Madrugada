@@ -3,13 +3,10 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace NetCoders.Madrugada.DataAccess.Mapping
 {
-    public class TelefoneMap : EntityTypeConfiguration<Telefone>
+    public class TelefoneMap : Core.BaseMap<Telefone>
     {
         public TelefoneMap()
         {
-            // Primary Key
-            this.HasKey(t => t.Codigo);
-
             // Properties
             // Table & Column Mappings
             this.ToTable("Telefone");
@@ -21,7 +18,6 @@ namespace NetCoders.Madrugada.DataAccess.Mapping
             this.HasRequired(t => t.Ficante)
                 .WithMany(t => t.Telefones)
                 .HasForeignKey(d => d.idFicante);
-
         }
     }
 }

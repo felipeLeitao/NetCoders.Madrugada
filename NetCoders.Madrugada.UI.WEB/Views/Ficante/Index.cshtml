@@ -20,20 +20,52 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nmFicante)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.dsObs)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.Codigo }) |
-            @Html.ActionLink("Details", "Details", new { id = item.Codigo }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.Codigo })
-        </td>
-    </tr>
+    @foreach (var item in Model)
+    {
+        <tr data-codigo="@item.Codigo">
+            <td>
+                @Html.DisplayFor(modelItem => item.nmFicante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsObs)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Codigo }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Codigo }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Codigo }, new { id = "delete" })
+            </td>
+        </tr>
+    }
+</table>
+
+@section styles {
+    <link href="~/Content/sweetalert.css" rel="stylesheet" />
 }
 
-</table>
+@section scripts{
+    <script src="~/Scripts/sweetalert.min.js"></script>
+
+    <script>
+        $(document).on('click', '#delete', function (e) {
+            e.preventDefault();
+            var elemento = $(this);
+            swal(
+            {
+                title: "Você tem certeza?",
+                text: "Este registro não poderá ser recuperado!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Sim, Apagar isto!",
+                closeOnConfirm: false,
+                cancelButtonText: "Cancelar"
+            }, function () {
+                swal("Apagando..", "O Sistema irá apagar o registro.", "success");
+
+                var codigo = elemento.closest('tr').data('codigo');
+                window.location = "/Ficante/Delete/" + codigo;
+            });
+        });
+    </script>
+}
+

@@ -51,20 +51,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\Core\BaseMap.cs" />
     <Compile Include="Mapping\FicanteMap.cs" />
     <Compile Include="Mapping\TelefoneMap.cs" />
     <Compile Include="Context\SisTinderContext.cs" />
+    <Compile Include="Mapping\UsuarioMap.cs" />
+    <Compile Include="Migrations\201512301354148_Initial.cs" />
+    <Compile Include="Migrations\201512301354148_Initial.Designer.cs">
+      <DependentUpon>201512301354148_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FicanteRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\TelefoneRepository.cs" />
+    <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="UnityOfWork\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512301354148_Initial.resx">
+      <DependentUpon>201512301354148_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetCoders.Madrugada.Domain\NetCoders.Madrugada.Domain.csproj">
       <Project>{b5139118-c3bc-4075-910d-473355adf389}</Project>

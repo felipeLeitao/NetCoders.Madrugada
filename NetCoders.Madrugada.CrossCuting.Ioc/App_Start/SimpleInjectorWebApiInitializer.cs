@@ -35,9 +35,13 @@ namespace NetCoders.Madrugada.CrossCuting.Ioc
             //Eu terei a instância de PropostaRepository
             container.Register<IFicanteService, FicanteService>();
             container.Register<ITelefoneService, TelefoneService>();
-            container.Register<IUnityOfWork, UnityOfWork>();
+            container.Register<IUsuarioService, UsuarioService>();
+
             container.Register<IFicanteRepository, FicanteRepository>();
             container.Register<ITelefoneRepository, TelefoneRepository>();
+            container.Register<IUsuarioRepository, UsuarioRepository>();
+
+            container.Register<IUnityOfWork, UnityOfWork>();
 
             //container.Register<SisTinderContext>();
 

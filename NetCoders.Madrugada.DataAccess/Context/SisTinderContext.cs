@@ -15,16 +15,19 @@ namespace NetCoders.Madrugada.DataAccess.Context
         public SisTinderContext()
             : base("Name=SisTinderContext")
         {
-           // this.Configuration.ProxyCreationEnabled = false;
+
         }
 
         public DbSet<Ficante> Ficantes { get; set; }
         public DbSet<Telefone> Telefones { get; set; }
 
+        public DbSet<Usuario> Usuarios { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new FicanteMap());
             modelBuilder.Configurations.Add(new TelefoneMap());
+            modelBuilder.Configurations.Add(new UsuarioMap());
         }
 
         public class SisTinderContextCustomInitializer : IDatabaseInitializer<SisTinderContext>

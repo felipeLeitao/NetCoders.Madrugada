@@ -3,13 +3,10 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace NetCoders.Madrugada.DataAccess.Mapping
 {
-    public class FicanteMap : EntityTypeConfiguration<Ficante>
+    public class FicanteMap : Core.BaseMap<Ficante>
     {
         public FicanteMap()
         {
-            // Primary Key
-            this.HasKey(t => t.Codigo);
-
             // Properties
             this.Property(t => t.nmFicante)
                 .IsRequired()
